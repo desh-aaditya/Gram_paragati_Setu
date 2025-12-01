@@ -1,0 +1,114 @@
+{
+  "app": {
+    "title": "Gram Pragati Setu",
+    "subtitle": "PM-AJAY Portal"
+  },
+  "header": {
+    "home": "Home",
+    "login": "Login",
+    "logout": "Logout",
+    "volunteerLogin": "Volunteer Login",
+    "employeeLogin": "Employee Login",
+    "officerLogin": "Officer Login"
+  },
+  "footer": {
+    "department": "Department of Social Justice and Empowerment",
+    "government": "Government of India",
+    "contact": "Contact",
+    "links": "Quick Links",
+    "copyright": "© 2024 Government of India. All rights reserved."
+  },
+  "home": {
+    "title": "PM-AJAY Portal",
+    "welcome": "Welcome to Gram Pragati Setu",
+    "description": "A comprehensive platform for monitoring and managing the progress of Adarsh villages under the PM-AJAY initiative.",
+    "features": {
+      "title": "Key Features",
+      "fundManagement": "Fund Management",
+      "villageTracking": "Village Progress Tracking",
+      "analytics": "Analytics & Reporting",
+      "gisMapping": "GIS Mapping",
+      "projectMonitoring": "Project Monitoring"
+    },
+    "loginCta": "Employee Login",
+    "aboutPmAjay": {
+      "title": "About PM-AJAY",
+      "description": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojana (PM-AJAY) is a comprehensive scheme that aims to provide a better quality of life and reduce poverty among the Scheduled Castes population."
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "overview": "Overview",
+    "totalFunds": "Total Funds",
+    "allocated": "Allocated",
+    "utilized": "Utilized",
+    "villages": "Villages",
+    "projects": "Projects",
+    "pendingSubmissions": "Pending Submissions"
+  },
+  "villages": {
+    "title": "Village Management",
+    "addVillage": "Add Village",
+    "editVillage": "Edit Village",
+    "name": "Village Name",
+    "state": "State",
+    "district": "District",
+    "block": "Block",
+    "population": "Population",
+    "adarshScore": "Adarsh Score",
+    "status": "Status"
+  },
+  "projects": {
+    "title": "Projects",
+    "addProject": "Add Project",
+    "title": "Project Title",
+    "type": "Project Type",
+    "status": "Status",
+    "allocated": "Allocated Amount",
+    "utilized": "Utilized Amount"
+  },
+  "funds": {
+    "title": "Fund Management",
+    "allocate": "Allocate Funds",
+    "release": "Release Funds",
+    "history": "Fund History",
+    "amount": "Amount",
+    "description": "Description"
+  },
+  "analytics": {
+    "title": "Analytics",
+    "fundUtilization": "Fund Utilization",
+    "projectStatus": "Project Status",
+    "adarshDistribution": "Adarsh Score Distribution"
+  },
+  "map": {
+    "title": "Village Map",
+    "adarshCandidate": "Adarsh Candidate",
+    "viewDetails": "View Details"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "confirm": "Confirm",
+    "close": "Close"
+  }
+}

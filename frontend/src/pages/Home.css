@@ -1,0 +1,145 @@
+.home-page {
+  min-height: calc(100vh - 200px);
+}
+
+.home-hero {
+  background: linear-gradient(135deg, var(--gov-primary) 0%, var(--gov-secondary) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.home-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  line-height: 1.8;
+}
+
+.home-cta {
+  margin-top: 2rem;
+}
+
+.home-btn-primary {
+  display: inline-block;
+  background: white;
+  color: var(--gov-primary);
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.home-features {
+  padding: 4rem 2rem;
+  background: var(--gov-light);
+}
+
+.home-features h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--gov-primary);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: var(--gov-primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: var(--gov-text);
+  line-height: 1.6;
+}
+
+.home-about {
+  padding: 4rem 2rem;
+}
+
+.home-about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--gov-primary);
+}
+
+.home-about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--gov-text);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .home-features h2,
+  .home-about h2 {
+    font-size: 2rem;
+  }
+}

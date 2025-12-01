@@ -1,0 +1,147 @@
+.villages-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.villages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.villages-header h1 {
+  color: var(--gov-primary);
+  font-size: 2rem;
+}
+
+.villages-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.villages-filters select {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gov-border);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.villages-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.villages-map {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+}
+
+.villages-list {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.villages-list h2 {
+  color: var(--gov-primary);
+  margin-bottom: 1rem;
+}
+
+.villages-table {
+  overflow-x: auto;
+}
+
+.villages-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.villages-table th,
+.villages-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gov-border);
+}
+
+.villages-table th {
+  background: var(--gov-light);
+  font-weight: 600;
+  color: var(--gov-primary);
+}
+
+.villages-table tbody tr {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.villages-table tbody tr:hover,
+.villages-table tbody tr.selected {
+  background: var(--gov-light);
+}
+
+.score-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  background: var(--gov-light);
+  font-weight: 600;
+}
+
+.score-badge.adarsh {
+  background: var(--gov-success);
+  color: white;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.adarsh-badge {
+  background: var(--gov-success);
+  color: white;
+}
+
+.btn-primary,
+.btn-link {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: var(--gov-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--gov-secondary);
+}
+
+.btn-link {
+  background: transparent;
+  color: var(--gov-secondary);
+  text-decoration: underline;
+}
+
+.villages-loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .villages-content {
+    grid-template-columns: 1fr;
+  }
+}

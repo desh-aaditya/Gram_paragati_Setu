@@ -1,0 +1,189 @@
+openapi: 3.0.0
+info:
+  title: Gram Pragati Setu API
+  version: 1.0.0
+  description: Backend API for Gram Pragati Setu web portal
+
+servers:
+  - url: http://localhost:5000/api
+    description: Development server
+
+paths:
+  /auth/login:
+    post:
+      summary: User login
+      tags: [Authentication]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [username, password]
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+                  refreshToken:
+                    type: string
+                  user:
+                    type: object
+        '401':
+          description: Invalid credentials
+
+  /villages:
+    get:
+      summary: List villages
+      tags: [Villages]
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: state
+          in: query
+          schema:
+            type: string
+        - name: district
+          in: query
+          schema:
+            type: string
+        - name: adarsh_candidate
+          in: query
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: List of villages
+    post:
+      summary: Create village (Officer only)
+      tags: [Villages]
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, state, district]
+              properties:
+                name:
+                  type: string
+                state:
+                  type: string
+                district:
+                  type: string
+                block:
+                  type: string
+                population:
+                  type: integer
+                latitude:
+                  type: number
+                longitude:
+                  type: number
+                geometry:
+                  type: object
+                baseline_metrics:
+                  type: object
+
+  /projects:
+    get:
+      summary: List projects
+      tags: [Projects]
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: village_id
+          in: query
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: List of projects
+
+  /sync/reports:
+    post:
+      summary: Sync reports from mobile app
+      tags: [Sync]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [reports, volunteer_id]
+              properties:
+                volunteer_id:
+                  type: string
+                reports:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      client_id:
+                        type: string
+                      checkpoint_id:
+                        type: integer
+                      submitted_at:
+                        type: string
+                        format: date-time
+                      media_items:
+                        type: array
+      responses:
+        '200':
+          description: Sync successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  synced_map:
+                    type: object
+                  synced_count:
+                    type: integer
+
+  /sync/media/presign:
+    post:
+      summary: Get presigned URL for media upload
+      tags: [Sync]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file_name, file_type]
+              properties:
+                file_name:
+                  type: string
+                file_type:
+                  type: string
+                file_size:
+                  type: integer
+
+  /analytics/dashboard:
+    get:
+      summary: Get dashboard statistics
+      tags: [Analytics]
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Dashboard data
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
