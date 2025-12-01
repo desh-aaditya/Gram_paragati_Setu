@@ -4,11 +4,11 @@
   "description": "Backend API for Gram Pragati Setu web portal",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "bun --watch src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "bun dist/index.js",
-    "migrate": "bun scripts/migrate.ts",
-    "seed": "bun scripts/seed.ts"
+    "start": "node dist/index.js",
+    "migrate": "tsx scripts/migrate.ts",
+    "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
@@ -47,7 +47,9 @@
     "@types/jsonwebtoken": "^9.0.5",
     "@types/multer": "^1.4.11",
     "@types/node": "^20.11.5",
+    "@types/pg": "^8.15.6",
     "@types/uuid": "^9.0.7",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   }
 }

@@ -97,7 +97,15 @@ const Villages: React.FC = () => {
 
       <div className="villages-content">
         <div className="villages-map">
-          <VillageMap villages={villages} onVillageSelect={setSelectedVillage} />
+          <VillageMap 
+            villages={villages} 
+            onVillageSelect={(village) => {
+              const selected = villages.find(v => v.id === village.id);
+              if (selected) {
+                setSelectedVillage(selected);
+              }
+            }} 
+          />
         </div>
 
         <div className="villages-list">

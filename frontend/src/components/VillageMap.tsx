@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -44,8 +44,10 @@ const VillageMap: React.FC<VillageMapProps> = ({ villages, onVillageSelect }) =>
         center={[20.5937, 78.9629]} // Center of India
         zoom={5}
         style={{ height: '100%', width: '100%' }}
-        whenCreated={(mapInstance) => {
-          mapRef.current = mapInstance;
+        ref={(map) => {
+          if (map) {
+            mapRef.current = map;
+          }
         }}
       >
         <TileLayer

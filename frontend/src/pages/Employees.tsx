@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './Employees.css';
 
 const Employees: React.FC = () => {
-  const { t } = useTranslation();
+  useTranslation(); // Keep for i18n context
 
   return (
     <div className="employees-page">

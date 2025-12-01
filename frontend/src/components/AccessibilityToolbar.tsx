@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './AccessibilityToolbar.css';
 
 const AccessibilityToolbar: React.FC = () => {
-  const { t } = useTranslation();
+  useTranslation(); // Keep for i18n context
   const [fontSize, setFontSize] = useState<'normal' | 'large'>('normal');
   const [contrast, setContrast] = useState<'normal' | 'high'>('normal');
 
