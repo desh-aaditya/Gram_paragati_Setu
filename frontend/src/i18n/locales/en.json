@@ -7,7 +7,6 @@
     "home": "Home",
     "login": "Login",
     "logout": "Logout",
-    "volunteerLogin": "Volunteer Login",
     "employeeLogin": "Employee Login",
     "officerLogin": "Officer Login"
   },
@@ -25,10 +24,15 @@
     "features": {
       "title": "Key Features",
       "fundManagement": "Fund Management",
+      "fundManagementDesc": "Track and manage fund allocations and releases efficiently",
       "villageTracking": "Village Progress Tracking",
+      "villageTrackingDesc": "Monitor village progress and Adarsh scores in real-time",
       "analytics": "Analytics & Reporting",
+      "analyticsDesc": "Comprehensive analytics and reporting with interactive charts",
       "gisMapping": "GIS Mapping",
-      "projectMonitoring": "Project Monitoring"
+      "gisMappingDesc": "Interactive GIS maps for village visualization and location tracking",
+      "projectMonitoring": "Project Monitoring",
+      "projectMonitoringDesc": "Real-time project and checkpoint monitoring with approvals"
     },
     "loginCta": "Employee Login",
     "aboutPmAjay": {

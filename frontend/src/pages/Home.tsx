@@ -1,6 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { 
+  MdAccountBalance, 
+  MdTrendingUp, 
+  MdBarChart, 
+  MdMap, 
+  MdCheckCircle,
+  MdLogin,
+  MdPeople,
+  MdHome
+} from 'react-icons/md';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -14,8 +24,11 @@ const Home: React.FC = () => {
           <p className="home-subtitle">{t('home.welcome')}</p>
           <p className="home-description">{t('home.description')}</p>
           <div className="home-cta">
-            <Link to="/login?role=employee" className="home-btn-primary">
-              {t('home.loginCta')}
+            <Link to="/login?role=employee" className="home-btn-secondary">
+              <MdLogin /> {t('header.employeeLogin')}
+            </Link>
+            <Link to="/login?role=officer" className="home-btn-primary">
+              <MdPeople /> {t('header.officerLogin')}
             </Link>
           </div>
         </div>
@@ -26,29 +39,39 @@ const Home: React.FC = () => {
           <h2>{t('home.features.title')}</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">💰</div>
+              <div className="feature-icon">
+                <MdAccountBalance />
+              </div>
               <h3>{t('home.features.fundManagement')}</h3>
-              <p>Track and manage fund allocations and releases</p>
+              <p>{t('home.features.fundManagementDesc')}</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">📊</div>
+              <div className="feature-icon">
+                <MdTrendingUp />
+              </div>
               <h3>{t('home.features.villageTracking')}</h3>
-              <p>Monitor village progress and Adarsh scores</p>
+              <p>{t('home.features.villageTrackingDesc')}</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">📈</div>
+              <div className="feature-icon">
+                <MdBarChart />
+              </div>
               <h3>{t('home.features.analytics')}</h3>
-              <p>Comprehensive analytics and reporting</p>
+              <p>{t('home.features.analyticsDesc')}</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">🗺️</div>
+              <div className="feature-icon">
+                <MdMap />
+              </div>
               <h3>{t('home.features.gisMapping')}</h3>
-              <p>Interactive GIS maps for village visualization</p>
+              <p>{t('home.features.gisMappingDesc')}</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">✅</div>
+              <div className="feature-icon">
+                <MdCheckCircle />
+              </div>
               <h3>{t('home.features.projectMonitoring')}</h3>
-              <p>Real-time project and checkpoint monitoring</p>
+              <p>{t('home.features.projectMonitoringDesc')}</p>
             </div>
           </div>
         </div>

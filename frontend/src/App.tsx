@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AccessibilityToolbar from './components/AccessibilityToolbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
@@ -85,7 +84,6 @@ const AppContent: React.FC = () => {
         </Routes>
       </main>
       <Footer />
-      <AccessibilityToolbar />
     </div>
   );
 };

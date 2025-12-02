@@ -7,7 +7,6 @@
     "home": "होम",
     "login": "लॉगिन",
     "logout": "लॉगआउट",
-    "volunteerLogin": "स्वयंसेवक लॉगिन",
     "employeeLogin": "कर्मचारी लॉगिन",
     "officerLogin": "अधिकारी लॉगिन"
   },
@@ -25,10 +24,15 @@
     "features": {
       "title": "मुख्य विशेषताएं",
       "fundManagement": "निधि प्रबंधन",
+      "fundManagementDesc": "निधि आवंटन और रिलीज को कुशलतापूर्वक ट्रैक और प्रबंधित करें",
       "villageTracking": "गांव प्रगति ट्रैकिंग",
+      "villageTrackingDesc": "गांव की प्रगति और आदर्श स्कोर को वास्तविक समय में निगरानी करें",
       "analytics": "विश्लेषण और रिपोर्टिंग",
+      "analyticsDesc": "इंटरैक्टिव चार्ट के साथ व्यापक विश्लेषण और रिपोर्टिंग",
       "gisMapping": "जीआईएस मैपिंग",
-      "projectMonitoring": "परियोजना निगरानी"
+      "gisMappingDesc": "गांव विज़ुअलाइज़ेशन और स्थान ट्रैकिंग के लिए इंटरैक्टिव जीआईएस मानचित्र",
+      "projectMonitoring": "परियोजना निगरानी",
+      "projectMonitoringDesc": "अनुमोदन के साथ वास्तविक समय परियोजना और चेकपॉइंट निगरानी"
     },
     "loginCta": "कर्मचारी लॉगिन",
     "aboutPmAjay": {

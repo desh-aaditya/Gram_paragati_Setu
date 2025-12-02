@@ -115,14 +115,94 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   font-size: 0.95rem;
   transition: all 0.3s;
   border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 4px;
 }
 
 .nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
   border-bottom-color: white;
+}
+
+.nav-right-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.accessibility-menu {
+  position: relative;
+}
+
+.accessibility-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.accessibility-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+}
+
+.accessibility-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: white;
+  border: 1px solid var(--gov-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.accessibility-btn {
+  background: white;
+  border: 1px solid var(--gov-border);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+  color: var(--gov-text);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.accessibility-btn:last-child {
+  margin-bottom: 0;
+}
+
+.accessibility-btn:hover {
+  background: var(--gov-light);
+  border-color: var(--gov-primary);
+}
+
+.accessibility-btn svg {
+  font-size: 1.2rem;
+  color: var(--gov-primary);
 }
 
 .language-switcher {
@@ -139,6 +219,9 @@
   cursor: pointer;
   font-size: 0.85rem;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .language-switcher button:hover,

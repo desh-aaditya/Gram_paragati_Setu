@@ -21,3 +21,6 @@ Write-Host "✓ fdir fixed" -ForegroundColor Green
 
 Write-Host "`nAll packages fixed! You can now run 'bun dev'" -ForegroundColor Green
 
+
+
+

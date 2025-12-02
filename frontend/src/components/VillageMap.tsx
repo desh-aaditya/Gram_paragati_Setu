@@ -67,13 +67,15 @@ const VillageMap: React.FC<VillageMapProps> = ({ villages, onVillageSelect }) =>
                 className: 'custom-marker',
                 html: `<div style="
                   background-color: ${color};
-                  width: 20px;
-                  height: 20px;
+                  width: ${village.is_adarsh_candidate ? '24px' : '20px'};
+                  height: ${village.is_adarsh_candidate ? '24px' : '20px'};
                   border-radius: 50%;
-                  border: 2px solid white;
-                  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-                "></div>`,
-                iconSize: [20, 20],
+                  border: 3px solid white;
+                  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+                  cursor: pointer;
+                  transition: transform 0.2s;
+                " title="${village.name} - Score: ${village.adarsh_score?.toFixed(1) || 'N/A'}"></div>`,
+                iconSize: [village.is_adarsh_candidate ? 24 : 20, village.is_adarsh_candidate ? 24 : 20],
               })}
               eventHandlers={{
                 click: () => {
@@ -82,13 +84,36 @@ const VillageMap: React.FC<VillageMapProps> = ({ villages, onVillageSelect }) =>
               }}
             >
               <Popup>
-                <div>
-                  <h3>{village.name}</h3>
-                  <p>State: {village.state}</p>
-                  <p>District: {village.district}</p>
-                  <p>Adarsh Score: {village.adarsh_score?.toFixed(1) || 'N/A'}</p>
+                <div style={{ minWidth: '200px' }}>
+                  <h3 style={{ margin: '0 0 0.5rem 0', color: '#003366' }}>{village.name}</h3>
+                  <p style={{ margin: '0.25rem 0' }}><strong>State:</strong> {village.state}</p>
+                  <p style={{ margin: '0.25rem 0' }}><strong>District:</strong> {village.district}</p>
+                  <p style={{ margin: '0.25rem 0' }}>
+                    <strong>Adarsh Score:</strong> 
+                    <span style={{
+                      display: 'inline-block',
+                      padding: '0.25rem 0.5rem',
+                      borderRadius: '4px',
+                      marginLeft: '0.5rem',
+                      backgroundColor: color,
+                      color: 'white',
+                      fontWeight: 'bold'
+                    }}>
+                      {village.adarsh_score?.toFixed(1) || 'N/A'}
+                    </span>
+                  </p>
                   {village.is_adarsh_candidate && (
-                    <p><strong>Adarsh Candidate</strong></p>
+                    <p style={{ 
+                      margin: '0.5rem 0 0 0',
+                      padding: '0.25rem 0.5rem',
+                      backgroundColor: '#008000',
+                      color: 'white',
+                      borderRadius: '4px',
+                      textAlign: 'center',
+                      fontWeight: 'bold'
+                    }}>
+                      ✓ Adarsh Candidate
+                    </p>
                   )}
                 </div>
               </Popup>

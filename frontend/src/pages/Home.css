@@ -35,13 +35,18 @@
 
 .home-cta {
   margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.home-btn-primary {
-  display: inline-block;
-  background: white;
-  color: var(--gov-primary);
-  padding: 1rem 3rem;
+.home-btn-primary,
+.home-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.1rem;
@@ -50,7 +55,24 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.home-btn-primary {
+  background: white;
+  color: var(--gov-primary);
+}
+
 .home-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.home-btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.home-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
@@ -94,8 +116,12 @@
 }
 
 .feature-icon {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: var(--gov-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-card h3 {

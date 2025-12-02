@@ -73,6 +73,27 @@ router.post('/', authenticate, authorize('officer'), async (req: AuthRequest, re
   }
 });
 
+// Get employee village assignments
+router.get('/:id/villages', authenticate, authorize('officer'), async (req: AuthRequest, res) => {
+  try {
+    const { id } = req.params;
+
+    const result = await pool.query(
+      `SELECT ev.village_id, v.name, v.state, v.district
+       FROM employee_villages ev
+       JOIN villages v ON v.id = ev.village_id
+       WHERE ev.employee_id = $1
+       ORDER BY v.name`,
+      [id]
+    );
+
+    res.json(result.rows);
+  } catch (error: any) {
+    console.error('Get employee villages error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 // Update employee village assignments (Officer only)
 router.put('/:id/villages', authenticate, authorize('officer'), async (req: AuthRequest, res) => {
   try {
