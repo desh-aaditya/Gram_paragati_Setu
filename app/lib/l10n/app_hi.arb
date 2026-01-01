@@ -1,0 +1,36 @@
+{
+    "appTitle": "ग्राम प्रगति सेतु",
+    "volunteerLogin": "स्वयंसेवक लॉगिन",
+    "welcomeTitle": "ग्राम प्रगति सेतु में आपका स्वागत है",
+    "welcomeSubtitle": "ग्रामीण विकास को सशक्त बनाना",
+    "villageSurvey": "ग्राम सर्वेक्षण",
+    "reportIssue": "समस्या की रिपोर्ट करें",
+    "officialInitiative": "आधिकारिक सरकारी पहल",
+    "volunteerAccess": "स्वयंसेवक प्रवेश",
+    "username": "उपयोगकर्ता नाम",
+    "password": "पासवर्ड",
+    "secureLogin": "सुरक्षित लॉगिन",
+    "authorizedOnly": "केवल अधिकृत कर्मियों के लिए",
+    "loginFailed": "लॉगिन विफल",
+    "serverError": "सर्वर त्रुटि",
+    "welcomeVolunteer": "स्वागत है, {name}",
+    "@welcomeVolunteer": {
+        "placeholders": {
+            "name": { "type": "String" }
+        }
+    },
+    "volunteerDashboard": "स्वयंसेवक डैशबोर्ड",
+    "assignedTo": "आवंटित: {villages}",
+    "@assignedTo": {
+        "placeholders": {
+            "villages": { "type": "String" }
+        }
+    },
+    "uploadProgress": "अपलोड प्रगति",
+    "updateProjectStatus": "परियोजना स्थिति अपडेट करें",
+    "validateIssues": "समस्याएं सत्यापित करें",
+    "verifyReportedIssues": "रिपोर्ट की गई समस्याओं को सत्यापित करें",
+    "verifySurveys": "सर्वेक्षण सत्यापित करें",
+    "verifyPriorityVotes": "प्राथमिकता वोट सत्यापित करें",
+    "noAssignedVillages": "कोई आवंटित गांव नहीं मिला"
+}

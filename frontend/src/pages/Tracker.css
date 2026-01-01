@@ -1,0 +1,132 @@
+/* Horizontal Progress Tracker Styles */
+.tracker-container {
+    overflow-x: auto;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    scrollbar-width: thin;
+}
+
+.tracker-steps {
+    display: flex;
+    align-items: flex-start;
+    min-width: min-content;
+    /* Allows scrolling */
+    padding: 0 1rem;
+}
+
+.tracker-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.tracker-step:hover,
+.tracker-step.active-selection {
+    opacity: 1;
+}
+
+.tracker-step.active-selection .step-circle {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Connector Line */
+.tracker-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    /* Center of 40px circle */
+    left: 50%;
+    width: 100%;
+    height: 4px;
+    background-color: #E0E0E0;
+    z-index: 1;
+}
+
+.tracker-step.completed:not(:last-child)::after {
+    background-color: #1E88E5;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E0E0E0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+    margin-bottom: 0.8rem;
+    border: 4px solid white;
+    /* Separates form line */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tracker-step.completed .step-circle {
+    background-color: #1E88E5;
+    color: white;
+}
+
+.tracker-step.active-selection .step-circle {
+    border-color: #e3f2fd;
+    /* Ring for selection */
+    background-color: #1565C0;
+    /* slightly darker blue on select? or keep same */
+    color: white;
+    /* ensure visible */
+}
+
+/* If active but pending, what color? 
+   Let's say selection just adds the ring/scale. 
+   But if pending is grey, selecting it might need visual feedback. 
+   I'll stick to: Completed = Blue, Pending = Grey. Selection = Scale + Shadow.
+*/
+
+.step-content {
+    text-align: center;
+    padding: 0 0.5rem;
+    width: 100%;
+}
+
+.step-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.step-desc {
+    font-size: 0.75rem;
+    color: #777;
+    line-height: 1.3;
+}
+
+/* Tracker Detail View */
+.tracker-detail-view {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

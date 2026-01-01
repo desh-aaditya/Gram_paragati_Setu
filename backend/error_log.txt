@@ -1,0 +1,24 @@
+2025-12-04T12:06:02.020Z - Error: column "client_id" does not exist
+Stack: error: column "client_id" does not exist
+    at C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\src\routes\mobile.ts:117:32)
+
+2025-12-04T12:06:48.217Z - Error: column "client_id" does not exist
+Stack: error: column "client_id" does not exist
+    at C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\src\routes\mobile.ts:117:32)
+
+2025-12-04T12:08:21.292Z - Error: insert or update on table "village_priority_votes" violates foreign key constraint "village_priority_votes_village_id_fkey"
+Stack: error: insert or update on table "village_priority_votes" violates foreign key constraint "village_priority_votes_village_id_fkey"
+    at C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\src\routes\mobile.ts:157:22)
+
+2025-12-04T12:09:21.203Z - Error: insert or update on table "village_priority_votes" violates foreign key constraint "village_priority_votes_village_id_fkey"
+Stack: error: insert or update on table "village_priority_votes" violates foreign key constraint "village_priority_votes_village_id_fkey"
+    at C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\src\routes\mobile.ts:157:22)
+

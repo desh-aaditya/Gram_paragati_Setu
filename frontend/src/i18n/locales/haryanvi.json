@@ -1,0 +1,199 @@
+{
+    "app": {
+        "title": "ग्राम प्रगति सेतु",
+        "subtitle": "गाम विकास मंच"
+    },
+    "header": {
+        "home": "घर",
+        "login": "लॉगिन",
+        "logout": "लॉग आउट",
+        "employeeLogin": "कर्मचारी लॉगिन",
+        "officerLogin": "अधिकारी लॉगिन",
+        "dashboard": "डैशबोर्ड",
+        "villages": "गाम",
+        "projects": "प्रोजेक्ट",
+        "volunteers": "स्वयंसेवक",
+        "manage": "संभालो",
+        "employees": "कर्मचारी",
+        "villagePlanUpdate": "गाम योजना अपडेट"
+    },
+    "footer": {
+        "department": "सामाजिक न्याय और अधिकारिता विभाग",
+        "government": "भारत सरकार",
+        "contact": "संपर्क",
+        "links": "लिंक",
+        "copyright": "© 2024 भारत सरकार. सरे हक़ राख लिए.",
+        "ministryWebsite": "मंत्रालय वेबसाइट",
+        "about": "ग्राम प्रगति सेतु के बारे में",
+        "help": "मदद और सहयोग",
+        "email": "ईमेल",
+        "phone": "फोन"
+    },
+    "home": {
+        "title": "ग्राम प्रगति सेतु",
+        "welcome": "ग्राम प्रगति सेतु में थारा स्वागत सै",
+        "description": "आदर्श गाम के विकास नै देखन और संभालन खातिर एक बड़ा मंच.",
+        "features": {
+            "title": "खास बात",
+            "fundManagement": "फंड प्रबंधन",
+            "fundManagementDesc": "पैसे के बंटवारे और खर्च नै सही तै देखो",
+            "villageTracking": "गाम प्रगति ट्रैकिंग",
+            "villageTrackingDesc": "गाम की तरक्की और आदर्श स्कोर नै देखो",
+            "analytics": "एनालिटिक्स और रिपोर्टिंग",
+            "analyticsDesc": "चार्ट के गैल पूरा हिसाब किताब",
+            "gisMapping": "GIS मैपिंग",
+            "gisMappingDesc": "गाम देखन और जगह पता करन खातिर नक्शा",
+            "projectMonitoring": "प्रोजेक्ट निगरानी",
+            "projectMonitoringDesc": "मंजूरी के गैल प्रोजेक्ट और चेकपॉइंट की निगरानी"
+        },
+        "loginCta": "कर्मचारी लॉगिन",
+        "aboutPmAjay": {
+            "title": "ग्राम प्रगति सेतु के बारे में",
+            "description": "ग्राम प्रगति सेतु एक बड़ा मंच सै जो गाम के विकास की ट्रैकिंग और मैनेजमेंट देवे सै."
+        }
+    },
+    "auth": {
+        "login": "लॉगिन",
+        "username": "यूजरनेम",
+        "password": "पासवर्ड",
+        "loginButton": "लॉगिन",
+        "forgotPassword": "पासवर्ड भूल गया के?",
+        "rememberMe": "मन्नै याद राखो",
+        "loginAs": "{{role}} बण कै लॉगिन करो",
+        "roles": {
+            "officer": "अधिकारी",
+            "employee": "कर्मचारी"
+        },
+        "loginError": "लॉगिन ना होया. अपनी जानकारी देख लेओ."
+    },
+    "dashboard": {
+        "title": "डैशबोर्ड",
+        "welcome": "स्वागत सै",
+        "overview": "सारांश",
+        "totalFunds": "कुल पैसे",
+        "allocated": "बांटे गए",
+        "utilized": "इस्तेमाल हुए",
+        "villages": "गाम",
+        "projects": "प्रोजेक्ट",
+        "pendingSubmissions": "रुके हुए काम",
+        "recentActivity": "हाल की हलचल",
+        "noActivity": "कोई हाल की हलचल कोनी",
+        "awaitingReview": "जाँच की बाट देख रहे",
+        "completed": "पूरा हो गया",
+        "inProgress": "चाल रह्या सै",
+        "created": "प्रोजेक्ट बण गया",
+        "updated": "प्रोजेक्ट अपडेट हो गया"
+    },
+    "project": {
+        "completion": "पूरा",
+        "type": "ढंग"
+    },
+    "villages": {
+        "title": "गाम प्रबंधन",
+        "addVillage": "गाम जोड़ो",
+        "editVillage": "गाम सुधारो",
+        "notFound": "गाम कोनी मिला",
+        "name": "गाम का नाम",
+        "state": "राज्य",
+        "district": "जिला",
+        "block": "खंड",
+        "population": "जनसंख्या",
+        "adarshScore": "आदर्श स्कोर",
+        "status": "हाल",
+        "fundSummary": "फंड सारांश",
+        "ongoingProjects": "चालू प्रोजेक्ट और तरक्की",
+        "adarshAnalysis": "आदर्श स्कोर विश्लेषण",
+        "currentScore": "इब का स्कोर",
+        "notCalculated": "ना गिण्या गया",
+        "scoreComponents": "स्कोर के हिस्से",
+        "needsForAdarsh": "⚠️ आदर्श गाम बणन खातिर के चाहिए",
+        "gapPoints": "आदर्श (85) तक पहुँचण खातिर {{gap}} और नंबर चाहिए",
+        "achieved": "✓ आदर्श गाम बण गया!",
+        "proposedProjects": "सोचे गए प्रोजेक्ट (सर्वे वोट)",
+        "topPriority": "सबसे ज़रूरी",
+        "votes": "वोट",
+        "convertConfirm": "के इस दिक्कत नै प्रोजेक्ट में बदल दें?",
+        "reportedIssues": "बताई गई दिक्कतें",
+        "noIssues": "कोई दिक्कत कोनी बताई",
+        "noProposedProjects": "कोई प्रोजेक्ट कोनी सोचा"
+    },
+    "projects": {
+        "title": "प्रोजेक्ट",
+        "addProject": "प्रोजेक्ट जोड़ो",
+        "create": "प्रोजेक्ट बणाओ",
+        "projectTitle": "प्रोजेक्ट का नाम",
+        "description": "ब्यौरा",
+        "type": "प्रोजेक्ट का ढंग",
+        "status": "हाल",
+        "allocated": "बांटे गए पैसे",
+        "utilized": "खर्च हुए पैसे",
+        "startDate": "शुरू की तारीख",
+        "endDate": "खतम की तारीख",
+        "subtasks": "प्रोजेक्ट के काम (चेकपॉइंट)",
+        "addSubtask": "काम जोड़ो",
+        "subtaskName": "काम का नाम",
+        "mandatory": "ज़रूरी",
+        "estimatedDate": "अंदाजा तारीख"
+    },
+    "funds": {
+        "title": "फंड प्रबंधन",
+        "allocate": "पैसे देओ",
+        "release": "पैसे छोड़ो",
+        "history": "पैसे का इतिहास",
+        "amount": "रुपये",
+        "description": "ब्यौरा"
+    },
+    "analytics": {
+        "title": "एनालिटिक्स",
+        "fundUtilization": "पैसे का इस्तेमाल",
+        "projectStatus": "प्रोजेक्ट का हाल",
+        "adarshDistribution": "आदर्श स्कोर बंटवारा"
+    },
+    "map": {
+        "title": "गाम का नक्शा",
+        "adarshCandidate": "आदर्श उम्मीदवार",
+        "viewDetails": "ब्यौरा देखो"
+    },
+    "common": {
+        "save": "सेव करो",
+        "cancel": "रद्द करो",
+        "delete": "हटाओ",
+        "edit": "सुधारो",
+        "view": "देखो",
+        "submit": "जमा करो",
+        "search": "टोलो",
+        "filter": "फिल्टर",
+        "export": "एक्सपोर्ट",
+        "loading": "लोड हो रह्या सै...",
+        "error": "गड़बड़ हो गई",
+        "success": "बढ़िया",
+        "confirm": "पक्का करो",
+        "close": "बंद करो",
+        "approve": "मंजूर",
+        "reject": "ना मंजूर",
+        "verified": "जांच लिया",
+        "pending": "रुका हुआ",
+        "validator": "जांचने वाला",
+        "verificationNote": "जांच नोट",
+        "retry": "फेरि कोशिश करो",
+        "selectType": "ढंग चुनो"
+    },
+    "profile": {
+        "title": "प्रोफाइल अपडेट करो",
+        "fullName": "पूरा नाम",
+        "newPassword": "नया पासवर्ड (पुराना राखण खातिर खाली छोड़ द्यो)",
+        "confirmPassword": "नया पासवर्ड पक्का करो",
+        "update": "प्रोफाइल अपडेट",
+        "updating": "अपडेट हो रह्या सै...",
+        "success": "प्रोफाइल अपडेट हो गई! बदलाव देखण खातिर फेरि लॉगिन करो.",
+        "passwordMismatch": "पासवर्ड कोनी मिल्या"
+    },
+    "accessibility": {
+        "language": "बोली",
+        "largeText": "बड़े अक्षर",
+        "normalText": "साधारण अक्षर",
+        "highContrast": "ज्यादा कंट्रास्ट",
+        "normalContrast": "साधारण कंट्रास्ट",
+        "readAloud": "बोल कै पढ़ो"
+    }
+}

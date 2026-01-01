@@ -1,0 +1,29 @@
+
+> gram-pragati-setu-backend@1.0.0 seed
+> tsx scripts/seed.ts
+
+[dotenv@17.2.3] injecting env (10) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Connected to PostgreSQL database
+Starting seed...
+Seed failed: error: new row for relation "users" violates check constraint "users_role_check"
+    at C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\node_modules\pg\lib\client.js:545:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async seed (C:\Users\devas\OneDrive\Desktop\gram_setu\new_Gram_setu\Gram_paragati_Setu\backend\scripts\seed.ts:17:9) {
+  length: 386,
+  severity: 'ERROR',
+  code: '23514',
+  detail: 'Failing row contains (1, admin, admin@gramsetu.gov.in, $2b$10$xLO6Sv9fARsDIAy3ibmA1eXLrlsdgGgwcELkV3ivpSnbF59WFP8H6, admin, System Administrator, null, IT, 2025-12-04 01:20:11.205465, 2025-12-04 01:20:11.205465, t).',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_role_check',
+  file: 'execMain.c',
+  line: '2077',
+  routine: 'ExecConstraints'
+}

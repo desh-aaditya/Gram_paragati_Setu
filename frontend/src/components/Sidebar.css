@@ -1,0 +1,141 @@
+/* Sidebar.css */
+.gov-sidebar {
+    background: white;
+    border-right: 1px solid var(--gov-border);
+    height: calc(100vh - 80px);
+    /* Subtract header height */
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.02);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.gov-sidebar.open {
+    width: 260px;
+}
+
+.gov-sidebar.closed {
+    width: 70px;
+}
+
+/* Toggle Button */
+.sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    background: var(--gov-secondary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+    z-index: 10;
+}
+
+.sidebar-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Nav Groups */
+.sidebar-nav {
+    padding: 1.5rem 0;
+    flex: 1;
+}
+
+.nav-group {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.group-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gov-text-secondary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    padding-left: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.gov-sidebar.closed .group-label {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+}
+
+/* Links */
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.75rem;
+    color: var(--gov-text-main);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    margin-bottom: 0.25rem;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar-link .icon {
+    font-size: 1.35rem;
+    color: var(--gov-text-secondary);
+    min-width: 24px;
+    /* Ensure icon doesn't shrink */
+}
+
+.sidebar-link .label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.gov-sidebar.closed .sidebar-link .label {
+    opacity: 0;
+    width: 0;
+}
+
+/* Active State - Aesthetic Highlight */
+.sidebar-link.active {
+    background: rgba(26, 35, 126, 0.05);
+    /* Very light blue */
+    color: var(--gov-primary);
+    border-left: 4px solid var(--gov-primary);
+    border-radius: 4px var(--radius-md) var(--radius-md) 4px;
+    /* Sharp left corner */
+}
+
+.sidebar-link.active .icon {
+    color: var(--gov-primary);
+}
+
+.sidebar-link:hover:not(.active) {
+    background: #f3f4f6;
+    color: var(--gov-primary);
+}
+
+.sidebar-link:hover:not(.active) .icon {
+    color: var(--gov-primary);
+}
+
+/* Footer Pattern (Tiranga Strip) */
+.sidebar-footer {
+    height: 6px;
+    background: linear-gradient(90deg, var(--gov-secondary), white, var(--gov-success));
+    flex-shrink: 0;
+}

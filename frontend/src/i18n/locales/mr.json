@@ -1,0 +1,199 @@
+{
+    "app": {
+        "title": "ग्राम प्रगती सेतू",
+        "subtitle": "ग्राम विकास मंच"
+    },
+    "header": {
+        "home": "मुख्यपृष्ठ",
+        "login": "लॉगिन",
+        "logout": "लॉग आउट",
+        "employeeLogin": "कर्मचारी लॉगिन",
+        "officerLogin": "अधिकारी लॉगिन",
+        "dashboard": "डॅशबोर्ड",
+        "villages": "गावे",
+        "projects": "प्रकल्प",
+        "volunteers": "स्वयंसेवक",
+        "manage": "व्यवस्थापन",
+        "employees": "कर्मचारी",
+        "villagePlanUpdate": "ग्राम योजना अपडेट"
+    },
+    "footer": {
+        "department": "सामाजिक न्याय आणि सक्षमीकरण विभाग",
+        "government": "भारत सरकार",
+        "contact": "संपर्क",
+        "links": "जलद दुवे",
+        "copyright": "© 2024 भारत सरकार. सर्व हक्क राखीव.",
+        "ministryWebsite": "मंत्रालयाची वेबसाइट",
+        "about": "ग्राम प्रगती सेतू बद्दल",
+        "help": "मदत आणि समर्थन",
+        "email": "ईमेल",
+        "phone": "फोन"
+    },
+    "home": {
+        "title": "ग्राम प्रगती सेतू",
+        "welcome": "ग्राम प्रगती सेतू मध्ये आपले स्वागत आहे",
+        "description": "आदर्श गावांच्या प्रगतीवर लक्ष ठेवण्यासाठी आणि व्यवस्थापित करण्यासाठी एक व्यापक मंच.",
+        "features": {
+            "title": "प्रमुख वैशिष्ट्ये",
+            "fundManagement": "निधी व्यवस्थापन",
+            "fundManagementDesc": "निधी वाटप आणि वितरणाचे कार्यक्षमतेने मागोवा घ्या आणि व्यवस्थापित करा",
+            "villageTracking": "ग्राम प्रगती ट्रॅकिंग",
+            "villageTrackingDesc": "गावाच्या प्रगतीचे आणि आदर्श गुणांचे रिअल-टाइममध्ये निरीक्षण करा",
+            "analytics": "विश्लेषण आणि अहवाल",
+            "analyticsDesc": "संवादी चार्ट्ससह व्यापक विश्लेषण आणि अहवाल",
+            "gisMapping": "जीआयएस मॅपिंग",
+            "gisMappingDesc": "गाव व्हिज्युअलायझेशन आणि स्थान ट्रॅकिंगसाठी संवादी जीआयएस नकाशे",
+            "projectMonitoring": "प्रकल्प देखरेख",
+            "projectMonitoringDesc": "मंजूरीसह रिअल-टाइम प्रकल्प आणि चेकपॉईंट देखरेख"
+        },
+        "loginCta": "कर्मचारी लॉगिन",
+        "aboutPmAjay": {
+            "title": "ग्राम प्रगती सेतू बद्दल",
+            "description": "ग्राम प्रगती सेतू हा एक व्यापक मंच आहे ज्याचा उद्देश ग्रामीण भागातील जीवनाचा दर्जा सुधारण्यावर लक्ष केंद्रित करून उत्तम ग्राम विकास ट्रॅकिंग आणि व्यवस्थापन प्रदान करणे आहे."
+        }
+    },
+    "auth": {
+        "login": "लॉगिन",
+        "username": "वापरकर्तानाव",
+        "password": "पासवर्ड",
+        "loginButton": "लॉगिन",
+        "forgotPassword": "पासवर्ड विसरलात?",
+        "rememberMe": "मला लक्षात ठेवा",
+        "loginAs": "{{role}} म्हणून लॉगिन करा",
+        "roles": {
+            "officer": "अधिकारी",
+            "employee": "कर्मचारी"
+        },
+        "loginError": "लॉगिन अयशस्वी. कृपया आपले क्रेडेंशियल्स तपासा."
+    },
+    "dashboard": {
+        "title": "डॅशबोर्ड",
+        "welcome": "स्वागत",
+        "overview": "आढावा",
+        "totalFunds": "एकूण निधी",
+        "allocated": "वाटप केले",
+        "utilized": "वापरले",
+        "villages": "गावे",
+        "projects": "प्रकल्प",
+        "pendingSubmissions": "प्रलंबित सबमिशन",
+        "recentActivity": "अलीकडील क्रियाकलाप",
+        "noActivity": "कोणतीही अलीकडील क्रियाकलाप नाही",
+        "awaitingReview": "पुनरावलोकनाची प्रतीक्षा करत आहे",
+        "completed": "पूर्ण झाले",
+        "inProgress": "प्रगतीपथावर",
+        "created": "प्रकल्प तयार केला",
+        "updated": "प्रकल्प अपडेट केला"
+    },
+    "project": {
+        "completion": "पूर्णत्व",
+        "type": "प्रकार"
+    },
+    "villages": {
+        "title": "ग्राम व्यवस्थापन",
+        "addVillage": "गाव जोडा",
+        "editVillage": "गाव संपादित करा",
+        "notFound": "गाव सापडले नाही",
+        "name": "गावाचे नाव",
+        "state": "राज्य",
+        "district": "जिल्हा",
+        "block": "तालुका",
+        "population": "लोकसंख्या",
+        "adarshScore": "आदर्श गुण",
+        "status": "स्थिती",
+        "fundSummary": "निधी सारांश",
+        "ongoingProjects": "चालू प्रकल्प आणि प्रगती",
+        "adarshAnalysis": "आदर्श गुण विश्लेषण",
+        "currentScore": "सध्याचे गुण",
+        "notCalculated": "मोजले नाही",
+        "scoreComponents": "गुण घटक",
+        "needsForAdarsh": "⚠️ आदर्श गाव होण्यासाठी या गावाला काय हवे आहे",
+        "gapPoints": "आदर्श (85) गाठण्यासाठी आणखी {{gap}} गुणांची आवश्यकता आहे",
+        "achieved": "✓ आदर्श गाव साध्य झाले!",
+        "proposedProjects": "प्रस्तावित प्रकल्प (सर्वेक्षण मते)",
+        "topPriority": "अग्रक्रम",
+        "votes": "मते",
+        "convertConfirm": "या समस्येचे प्रकल्पात रूपांतर करायचे?",
+        "reportedIssues": "नोंदवलेल्या समस्या",
+        "noIssues": "कोणत्याही समस्या नोंदवल्या नाहीत",
+        "noProposedProjects": "कोणतेही प्रस्तावित प्रकल्प आढळले नाहीत"
+    },
+    "projects": {
+        "title": "प्रकल्प",
+        "addProject": "प्रकल्प जोडा",
+        "create": "प्रकल्प तयार करा",
+        "projectTitle": "प्रकल्प शीर्षक",
+        "description": "वर्णन",
+        "type": "प्रकल्प प्रकार",
+        "status": "स्थिती",
+        "allocated": "वाटप केलेली रक्कम",
+        "utilized": "वापरलेली रक्कम",
+        "startDate": "प्रारंभ तारीख",
+        "endDate": "समाप्ती तारीख",
+        "subtasks": "प्रकल्प उपकार्ये (चेकपॉईंट्स)",
+        "addSubtask": "उपकार्य जोडा",
+        "subtaskName": "उपकार्याचे नाव",
+        "mandatory": "अनिवार्य",
+        "estimatedDate": "अंदाजित तारीख"
+    },
+    "funds": {
+        "title": "निधी व्यवस्थापन",
+        "allocate": "निधी वाटप",
+        "release": "निधी वितरण",
+        "history": "निधी इतिहास",
+        "amount": "रक्कम",
+        "description": "वर्णन"
+    },
+    "analytics": {
+        "title": "विश्लेषण",
+        "fundUtilization": "निधी वापर",
+        "projectStatus": "प्रकल्प स्थिती",
+        "adarshDistribution": "आदर्श गुण वितरण"
+    },
+    "map": {
+        "title": "गाव नकाशा",
+        "adarshCandidate": "आदर्श उमेदवार",
+        "viewDetails": "तपशील पहा"
+    },
+    "common": {
+        "save": "जतन करा",
+        "cancel": "रद्द करा",
+        "delete": "हटवा",
+        "edit": "संपादित करा",
+        "view": "पहा",
+        "submit": "सादर करा",
+        "search": "शोधा",
+        "filter": "फिल्टर",
+        "export": "निर्यात करा",
+        "loading": "लोड होत आहे...",
+        "error": "त्रुटी आली",
+        "success": "यशस्वी",
+        "confirm": "पुष्टी करा",
+        "close": "बंद करा",
+        "approve": "मंजूर करा",
+        "reject": "नाकारला",
+        "verified": "सत्यापित",
+        "pending": "प्रलंबित",
+        "validator": "मूल्यांकनकर्ता",
+        "verificationNote": "पडताळणी टीप",
+        "retry": "पुन्हा प्रयत्न करा",
+        "selectType": "प्रकार निवडा"
+    },
+    "profile": {
+        "title": "प्रोफाइल अपडेट करा",
+        "fullName": "पूर्ण नाव",
+        "newPassword": "नवीन पासवर्ड (सध्याचा ठेवण्यासाठी रिक्त सोडा)",
+        "confirmPassword": "नवीन पासवर्डची पुष्टी करा",
+        "update": "प्रोफाइल अपडेट करा",
+        "updating": "अपडेट होत आहे...",
+        "success": "प्रोफाइल यशस्वीरित्या अपडेट केली! बदल पाहण्यासाठी कृपया पुन्हा लॉगिन करा.",
+        "passwordMismatch": "पासवर्ड जुळत नाहीत"
+    },
+    "accessibility": {
+        "language": "भाषा",
+        "largeText": "मोठा मजकूर",
+        "normalText": "सामान्य मजकूर",
+        "highContrast": "उच्च कॉन्ट्रास्ट",
+        "normalContrast": "सामान्य कॉन्ट्रास्ट",
+        "readAloud": "मोठ्याने वाचा"
+    }
+}

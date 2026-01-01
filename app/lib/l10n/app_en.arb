@@ -1,0 +1,36 @@
+{
+    "appTitle": "Gram Pragati Setu",
+    "volunteerLogin": "Volunteer Login",
+    "welcomeTitle": "Welcome to Gram Pragati Setu",
+    "welcomeSubtitle": "Empowering Rural Development",
+    "villageSurvey": "Village Survey",
+    "reportIssue": "Report Issue",
+    "officialInitiative": "Official Government Initiative",
+    "volunteerAccess": "Volunteer Access",
+    "username": "Username",
+    "password": "Password",
+    "secureLogin": "SECURE LOGIN",
+    "authorizedOnly": "Authorized Personnel Only",
+    "loginFailed": "Login failed",
+    "serverError": "Server error",
+    "welcomeVolunteer": "Welcome, {name}",
+    "@welcomeVolunteer": {
+        "placeholders": {
+            "name": { "type": "String" }
+        }
+    },
+    "volunteerDashboard": "Volunteer Dashboard",
+    "assignedTo": "Assigned to: {villages}",
+    "@assignedTo": {
+        "placeholders": {
+            "villages": { "type": "String" }
+        }
+    },
+    "uploadProgress": "Upload Progress",
+    "updateProjectStatus": "Update Project Status",
+    "validateIssues": "Validate Issues",
+    "verifyReportedIssues": "Verify Reported Issues",
+    "verifySurveys": "Verify Surveys",
+    "verifyPriorityVotes": "Verify Priority Votes",
+    "noAssignedVillages": "No assigned villages found"
+}

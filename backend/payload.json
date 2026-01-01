@@ -1,0 +1,9 @@
+{
+    "village_id": 1,
+    "required_infrastructure": "Roads",
+    "description": "Test Debug Payload Fixed",
+    "is_volunteer": true,
+    "volunteer_id": 3,
+    "employee_id": 2,
+    "client_id": "test-debug-client-fixed"
+}

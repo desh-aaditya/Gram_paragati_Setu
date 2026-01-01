@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* =========================================
+     🇮🇳 AESTHETIC INDIAN GOVT THEME PALETTE
+     ========================================= */
+
+  /* Primary Identity (Blue - Trust, Ashok Chakra) */
+  --gov-primary: #1A237E;
+  /* Deep Royal Blue */
+  --gov-primary-light: #534BAE;
+  --gov-primary-dark: #000051;
+
+  /* Secondary Identity (Saffron - Energy, Top Band) */
+  --gov-secondary: #FF9933;
+  /* Tiranga Saffron */
+  --gov-secondary-hover: #E65100;
+
+  /* Accent Identity (Green - Growth, Bottom Band) */
+  --gov-accent: #138808;
+  /* Tiranga Green */
+  --gov-accent-light: #A5D6A7;
+  /* Pastel Green for backgrounds */
+
+  /* Neutrals & Surfaces */
+  --gov-bg: #F8F9FA;
+  /* Very light gray/blue tint */
+  --gov-surface: #FFFFFF;
+  /* Pure White */
+  --gov-text-main: #1F2937;
+  /* Charcoal Black */
+  --gov-text-secondary: #6B7280;
+  /* Cool Gray */
+  --gov-border: #E5E7EB;
+  /* Light Gray Border */
+
+  /* UI Status Colors */
+  --gov-success: #138808;
+  /* Green */
+  --gov-warning: #FF9800;
+  /* Amber */
+  --gov-danger: #D32F2F;
+  /* Red */
+  --gov-info: #0288D1;
+  /* Light Blue */
+
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Modern Card UI Styling */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =========================================
+   THEME VARIANTS (Dynamic Switching)
+   ========================================= */
+
+/* 1. SAFFRON THEME (Energy/Warmth) */
+[data-theme='saffron'] {
+  --gov-primary: #E65100;
+  /* Deep Orange */
+  --gov-primary-light: #FF9800;
+  --gov-primary-dark: #BF360C;
+  --gov-secondary: #1A237E;
+  /* Navy Blue Accent */
+  --gov-accent: #2E7D32;
+}
+
+/* 2. GREEN THEME (Agriculture/Growth) */
+[data-theme='green'] {
+  --gov-primary: #1B5E20;
+  /* Forest Green */
+  --gov-primary-light: #4CAF50;
+  --gov-primary-dark: #003300;
+  --gov-secondary: #FF9800;
+  /* Amber Accent */
+  --gov-accent: #1A237E;
+}
+
+/* 3. TEAL THEME (Modern/Digital) */
+[data-theme='teal'] {
+  --gov-primary: #006064;
+  /* Cyber Teal */
+  --gov-primary-light: #00ACC1;
+  --gov-primary-dark: #00363A;
+  --gov-secondary: #C2185B;
+  /* Pink Accent */
+  --gov-accent: #FFC107;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--gov-bg);
+  color: var(--gov-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--gov-primary);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* =========================================
+   Universal Component Classes (.gov-*)
+   ========================================= */
+
+/* 1. BUTTONS */
+.gov-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  gap: 8px;
+}
+
+.gov-btn-primary {
+  background: linear-gradient(135deg, var(--gov-primary) 0%, #283593 100%);
+  color: white;
+  box-shadow: 0 4px 6px rgba(26, 35, 126, 0.2);
+}
+
+.gov-btn-primary:hover {
+  background: linear-gradient(135deg, #283593 0%, var(--gov-primary) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(26, 35, 126, 0.3);
+}
+
+.gov-btn-secondary {
+  background: white;
+  border: 2px solid var(--gov-primary);
+  color: var(--gov-primary);
+}
+
+.gov-btn-secondary:hover {
+  background: #E8EAF6;
+  /* Light Indigo tint */
+}
+
+.gov-btn-accent {
+  background: linear-gradient(135deg, var(--gov-secondary) 0%, #F57C00 100%);
+  color: white;
+}
+
+.gov-btn-accent:hover {
+  background: linear-gradient(135deg, #F57C00 0%, var(--gov-secondary) 100%);
+  transform: translateY(-1px);
+}
+
+/* 2. CARDS */
+.gov-card {
+  background: var(--gov-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.gov-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Top colored border for cards (Aesthetic Touch) */
+.gov-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gov-secondary) 0%, var(--gov-primary) 50%, var(--gov-accent) 100%);
+  opacity: 0.9;
+}
+
+/* 3. INPUTS */
+.gov-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--gov-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: #F9FAFB;
+  transition: all 0.2s;
+}
+
+.gov-input:focus {
+  background: white;
+  border-color: var(--gov-primary);
+  box-shadow: 0 0 0 4px rgba(26, 35, 126, 0.1);
+  /* Primary Blue Glow */
+  outline: none;
+}
+
+/* 4. UTILITIES */
+.text-gradient {
+  background: linear-gradient(90deg, var(--gov-primary) 0%, var(--gov-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* High Contrast & Accessibility Support */
+body.high-contrast {
+  --gov-primary: #000000;
+  --gov-secondary: #FFFF00;
+  --gov-surface: #FFFFFF;
+  --gov-bg: #FFFFFF;
+  --gov-text-main: #000000;
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: var(--gov-secondary);
+  /* Saffron Spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

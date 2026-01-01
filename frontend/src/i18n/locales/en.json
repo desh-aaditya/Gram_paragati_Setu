@@ -1,0 +1,199 @@
+{
+  "app": {
+    "title": "Gram Pragati Setu",
+    "subtitle": "Village Development Platform"
+  },
+  "header": {
+    "home": "Home",
+    "login": "Login",
+    "logout": "Logout",
+    "employeeLogin": "Employee Login",
+    "officerLogin": "Officer Login",
+    "dashboard": "Dashboard",
+    "villages": "Villages",
+    "projects": "Projects",
+    "volunteers": "Volunteers",
+    "manage": "Manage",
+    "employees": "Employees",
+    "villagePlanUpdate": "Village Plan Update"
+  },
+  "footer": {
+    "department": "Department of Social Justice and Empowerment",
+    "government": "Government of India",
+    "contact": "Contact",
+    "links": "Quick Links",
+    "copyright": "© 2024 Government of India. All rights reserved.",
+    "ministryWebsite": "Ministry Website",
+    "about": "About Gram Pragati Setu",
+    "help": "Help & Support",
+    "email": "Email",
+    "phone": "Phone"
+  },
+  "home": {
+    "title": "Gram Pragati Setu",
+    "welcome": "Welcome to Gram Pragati Setu",
+    "description": "A comprehensive platform for monitoring and managing the progress of Adarsh villages.",
+    "features": {
+      "title": "Key Features",
+      "fundManagement": "Fund Management",
+      "fundManagementDesc": "Track and manage fund allocations and releases efficiently",
+      "villageTracking": "Village Progress Tracking",
+      "villageTrackingDesc": "Monitor village progress and Adarsh scores in real-time",
+      "analytics": "Analytics & Reporting",
+      "analyticsDesc": "Comprehensive analytics and reporting with interactive charts",
+      "gisMapping": "GIS Mapping",
+      "gisMappingDesc": "Interactive GIS maps for village visualization and location tracking",
+      "projectMonitoring": "Project Monitoring",
+      "projectMonitoringDesc": "Real-time project and checkpoint monitoring with approvals"
+    },
+    "loginCta": "Employee Login",
+    "aboutPmAjay": {
+      "title": "About Gram Pragati Setu",
+      "description": "Gram Pragati Setu is a comprehensive platform that aims to provide better village development tracking and management, focusing on improving quality of life in rural areas."
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me",
+    "loginAs": "Login as {{role}}",
+    "roles": {
+      "officer": "Officer",
+      "employee": "Employee"
+    },
+    "loginError": "Login failed. Please check your credentials."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "overview": "Overview",
+    "totalFunds": "Total Funds",
+    "allocated": "Allocated",
+    "utilized": "Utilized",
+    "villages": "Villages",
+    "projects": "Projects",
+    "pendingSubmissions": "Pending Submissions",
+    "recentActivity": "Recent Activity",
+    "noActivity": "No recent activity",
+    "awaitingReview": "Awaiting Review",
+    "completed": "Completed",
+    "inProgress": "In Progress",
+    "created": "Project Created",
+    "updated": "Project Updated"
+  },
+  "project": {
+    "completion": "Completion",
+    "type": "Type"
+  },
+  "villages": {
+    "title": "Village Management",
+    "addVillage": "Add Village",
+    "editVillage": "Edit Village",
+    "notFound": "Village Not Found",
+    "name": "Village Name",
+    "state": "State",
+    "district": "District",
+    "block": "Block",
+    "population": "Population",
+    "adarshScore": "Adarsh Score",
+    "status": "Status",
+    "fundSummary": "Fund Summary",
+    "ongoingProjects": "Ongoing Projects & Progress",
+    "adarshAnalysis": "Adarsh Score Analysis",
+    "currentScore": "Current Score",
+    "notCalculated": "Not Calculated",
+    "scoreComponents": "Score Components",
+    "needsForAdarsh": "⚠️ What This Village Needs to Reach Adarsh",
+    "gapPoints": "Need {{gap}} more points to reach Adarsh (85)",
+    "achieved": "✓ Adarsh Village Achieved!",
+    "proposedProjects": "Proposed Projects (Survey Votes)",
+    "topPriority": "Top Priority",
+    "votes": "Votes",
+    "convertConfirm": "Convert this issue to a project?",
+    "reportedIssues": "Reported Issues",
+    "noIssues": "No issues reported",
+    "noProposedProjects": "No proposed projects found"
+  },
+  "projects": {
+    "title": "Projects",
+    "addProject": "Add Project",
+    "create": "Create Project",
+    "projectTitle": "Project Title",
+    "description": "Description",
+    "type": "Project Type",
+    "status": "Status",
+    "allocated": "Allocated Amount",
+    "utilized": "Utilized Amount",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "subtasks": "Project Subtasks (Checkpoints)",
+    "addSubtask": "Add Subtask",
+    "subtaskName": "Subtask Name",
+    "mandatory": "Mandatory",
+    "estimatedDate": "Estimated Date"
+  },
+  "funds": {
+    "title": "Fund Management",
+    "allocate": "Allocate Funds",
+    "release": "Release Funds",
+    "history": "Fund History",
+    "amount": "Amount",
+    "description": "Description"
+  },
+  "analytics": {
+    "title": "Analytics",
+    "fundUtilization": "Fund Utilization",
+    "projectStatus": "Project Status",
+    "adarshDistribution": "Adarsh Score Distribution"
+  },
+  "map": {
+    "title": "Village Map",
+    "adarshCandidate": "Adarsh Candidate",
+    "viewDetails": "View Details"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "confirm": "Confirm",
+    "close": "Close",
+    "approve": "Approve",
+    "reject": "Reject",
+    "verified": "Verified",
+    "pending": "Pending",
+    "validator": "Validator",
+    "verificationNote": "Verification Note",
+    "retry": "Retry",
+    "selectType": "Select Type"
+  },
+  "profile": {
+    "title": "Update Profile",
+    "fullName": "Full Name",
+    "newPassword": "New Password (leave blank to keep current)",
+    "confirmPassword": "Confirm New Password",
+    "update": "Update Profile",
+    "updating": "Updating...",
+    "success": "Profile updated successfully! Please login again to see changes.",
+    "passwordMismatch": "Passwords do not match"
+  },
+  "accessibility": {
+    "language": "Language",
+    "largeText": "Large Text",
+    "normalText": "Normal Text",
+    "highContrast": "High Contrast",
+    "normalContrast": "Normal Contrast",
+    "readAloud": "Read Aloud"
+  }
+}

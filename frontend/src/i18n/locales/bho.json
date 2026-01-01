@@ -1,0 +1,199 @@
+{
+    "app": {
+        "title": "ग्राम प्रगति सेतु",
+        "subtitle": "गाँव विकास मंच"
+    },
+    "header": {
+        "home": "घर",
+        "login": "लॉगिन",
+        "logout": "लॉग आउट",
+        "employeeLogin": "कर्मचारी लॉगिन",
+        "officerLogin": "अधिकारी लॉगिन",
+        "dashboard": "डैशबोर्ड",
+        "villages": "गाँव",
+        "projects": "परियोजना",
+        "volunteers": "स्वयंसेवक",
+        "manage": "प्रबंध करीं",
+        "employees": "कर्मचारी",
+        "villagePlanUpdate": "ग्राम योजना अपडेट"
+    },
+    "footer": {
+        "department": "सामाजिक न्याय और अधिकारिता विभाग",
+        "government": "भारत सरकार",
+        "contact": "संपर्क",
+        "links": "लिंक",
+        "copyright": "© 2024 भारत सरकार. सब अधिकार सुरक्षित बा.",
+        "ministryWebsite": "मंत्रालय वेबसाइट",
+        "about": "ग्राम प्रगति सेतु के बारे में",
+        "help": "मदद और सहयोग",
+        "email": "ईमेल",
+        "phone": "फोन"
+    },
+    "home": {
+        "title": "ग्राम प्रगति सेतु",
+        "welcome": "ग्राम प्रगति सेतु में रउआ सब के स्वागत बा",
+        "description": "आदर्श गाँव के प्रगति के निगरानी और प्रबंधन खातिर एगो व्यापक मंच.",
+        "features": {
+            "title": "खास बात",
+            "fundManagement": "फंड प्रबंधन",
+            "fundManagementDesc": "फंड आवंटन और रिलीज के सही से ट्रैक और मैनेज करीं",
+            "villageTracking": "गाँव प्रगति ट्रैकिंग",
+            "villageTrackingDesc": "गाँव के प्रगति और आदर्श स्कोर के निगरानी करीं",
+            "analytics": "एनालिटिक्स और रिपोर्टिंग",
+            "analyticsDesc": "चार्ट के साथ पूरा विश्लेषण और रिपोर्ट",
+            "gisMapping": "GIS मैपिंग",
+            "gisMappingDesc": "गाँव के देखे खातिर और लोकेशन ट्रैकिंग खातिर नक्शा",
+            "projectMonitoring": "परियोजना निगरानी",
+            "projectMonitoringDesc": "मंजूरी के साथ प्रोजेक्ट और चेकपॉइंट के रियल-टाइम निगरानी"
+        },
+        "loginCta": "कर्मचारी लॉगिन",
+        "aboutPmAjay": {
+            "title": "ग्राम प्रगति सेतु के बारे में",
+            "description": "ग्राम प्रगति सेतु एगो बड़ मंच ह जवन गाँव के विकास के ट्रैकिंग और मैनेजमेंट देवेला."
+        }
+    },
+    "auth": {
+        "login": "लॉगिन",
+        "username": "यूजरनेम",
+        "password": "पासवर्ड",
+        "loginButton": "लॉगिन",
+        "forgotPassword": "पासवर्ड भुला गइनी का?",
+        "rememberMe": "हमके याद राखीं",
+        "loginAs": "{{role}} के रूप में लॉगिन करीं",
+        "roles": {
+            "officer": "अधिकारी",
+            "employee": "कर्मचारी"
+        },
+        "loginError": "लॉगिन फेल हो गइल. कृपया अपन जानकारी जाँचीं."
+    },
+    "dashboard": {
+        "title": "डैशबोर्ड",
+        "welcome": "स्वागत बा",
+        "overview": "ओवरव्यू",
+        "totalFunds": "कुल फंड",
+        "allocated": "आवंटित",
+        "utilized": "इस्तेमाल",
+        "villages": "गाँव",
+        "projects": "परियोजना",
+        "pendingSubmissions": "बाकी सबमिशन",
+        "recentActivity": "हाल के गतिविधि",
+        "noActivity": "कवनो हाल के गतिविधि नइखे",
+        "awaitingReview": "रिव्यू के इंतजार",
+        "completed": "पूरा हो गइल",
+        "inProgress": "काम चलत बा",
+        "created": "प्रोजेक्ट बनल",
+        "updated": "प्रोजेक्ट अपडेट भइल"
+    },
+    "project": {
+        "completion": "पूक",
+        "type": "प्रकार"
+    },
+    "villages": {
+        "title": "गाँव प्रबंधन",
+        "addVillage": "गाँव जोड़ीं",
+        "editVillage": "गाँव सुधारीं",
+        "notFound": "गाँव ना मिलल",
+        "name": "गाँव के नाम",
+        "state": "राज्य",
+        "district": "जिला",
+        "block": "ब्लॉक",
+        "population": "आबादी",
+        "adarshScore": "आदर्श स्कोर",
+        "status": "स्थिति",
+        "fundSummary": "फंड सारांश",
+        "ongoingProjects": "चलत प्रोजेक्ट और प्रगति",
+        "adarshAnalysis": "आदर्श स्कोर विश्लेषण",
+        "currentScore": "अभी के स्कोर",
+        "notCalculated": "ना जोडल गइल",
+        "scoreComponents": "स्कोर के हिस्सा",
+        "needsForAdarsh": "⚠️ आदर्श गाँव बने खातिर का चाहीं",
+        "gapPoints": "आदर्श (85) तक पहुँचे खातिर {{gap}} और प्वाइंट चाहीं",
+        "achieved": "✓ आदर्श गाँव बन गइल!",
+        "proposedProjects": "प्रस्तावित प्रोजेक्ट (सर्वे वोट)",
+        "topPriority": "सबसे जरूरी",
+        "votes": "वोट",
+        "convertConfirm": "का ई समस्या के प्रोजेक्ट में बदलल जाव?",
+        "reportedIssues": "बतावल गइल समस्या",
+        "noIssues": "कवनो समस्या ना बतावल गइल",
+        "noProposedProjects": "कवनो प्रस्तावित प्रोजेक्ट ना मिलल"
+    },
+    "projects": {
+        "title": "परियोजना",
+        "addProject": "प्रोजेक्ट जोड़ीं",
+        "create": "प्रोजेक्ट बनाईं",
+        "projectTitle": "प्रोजेक्ट के नाम",
+        "description": "विवरण",
+        "type": "प्रोजेक्ट के प्रकार",
+        "status": "स्थिति",
+        "allocated": "आवंटित राशि",
+        "utilized": "खर्च राशि",
+        "startDate": "शुरू के तारीख",
+        "endDate": "खतम के तारीख",
+        "subtasks": "प्रोजेक्ट के काम (चेकपॉइंट)",
+        "addSubtask": "काम जोड़ीं",
+        "subtaskName": "काम के नाम",
+        "mandatory": "जरूरी",
+        "estimatedDate": "अंदाजा तारीख"
+    },
+    "funds": {
+        "title": "फंड प्रबंधन",
+        "allocate": "फंड दीं",
+        "release": "फंड छोड़ीं",
+        "history": "फंड इतिहास",
+        "amount": "राशि",
+        "description": "विवरण"
+    },
+    "analytics": {
+        "title": "एनालिटिक्स",
+        "fundUtilization": "फंड के इस्तेमाल",
+        "projectStatus": "प्रोजेक्ट स्थिति",
+        "adarshDistribution": "आदर्श स्कोर वितरण"
+    },
+    "map": {
+        "title": "गाँव के नक्शा",
+        "adarshCandidate": "आदर्श उम्मीदवार",
+        "viewDetails": "विवरण देखीं"
+    },
+    "common": {
+        "save": "सेव करीं",
+        "cancel": "रद्द करीं",
+        "delete": "हटा दीं",
+        "edit": "सुधारीं",
+        "view": "देखीं",
+        "submit": "जमा करीं",
+        "search": "खोजीं",
+        "filter": "फिल्टर",
+        "export": "एक्सपोर्ट",
+        "loading": "लोड होत बा...",
+        "error": "गड़बड़ हो गइल",
+        "success": "सफल",
+        "confirm": "पक्का करीं",
+        "close": "बंद करीं",
+        "approve": "मंजूर",
+        "reject": "नामंजूर",
+        "verified": "जाँचल गइल",
+        "pending": "बाकी",
+        "validator": "जाँच करे वाला",
+        "verificationNote": "जाँच नोट",
+        "retry": "फिर कोशिश करीं",
+        "selectType": "प्रकार चुनीं"
+    },
+    "profile": {
+        "title": "प्रोफाइल अपडेट करीं",
+        "fullName": "पूरा नाम",
+        "newPassword": "नया पासवर्ड (पुराना रखे खातिर खाली छोड़ द)",
+        "confirmPassword": "नया पासवर्ड पक्का करीं",
+        "update": "प्रोफाइल अपडेट",
+        "updating": "अपडेट होत बा...",
+        "success": "प्रोफाइल अपडेट हो गइल! बदलाव देखे खातिर फिर से लॉगिन करीं.",
+        "passwordMismatch": "पासवर्ड ना मिलल"
+    },
+    "accessibility": {
+        "language": "भाषा",
+        "largeText": "बड़ अक्षर",
+        "normalText": "समान्य अक्षर",
+        "highContrast": "ज्यादा कंट्रास्ट",
+        "normalContrast": "समान्य कंट्रास्ट",
+        "readAloud": "बोल के पढ़ीं"
+    }
+}
