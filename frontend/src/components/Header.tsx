@@ -117,7 +117,7 @@ const Header: React.FC<HeaderProps> = ({ user, onLogout }) => {
       // I will use a direct fetch with the token.
 
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/auth/me', {
+      const response = await fetch('https://gram-paragati-setu.onrender.com/api/auth/me', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

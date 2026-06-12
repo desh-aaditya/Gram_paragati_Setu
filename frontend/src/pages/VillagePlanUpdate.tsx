@@ -80,7 +80,7 @@ const VillagePlanUpdate: React.FC = () => {
 
     const fetchVillages = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/villages', {
+            const response = await fetch('https://gram-paragati-setu.onrender.com/api/villages', {
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('accessToken')}` }
             });
             const data = await response.json();
@@ -102,7 +102,7 @@ const VillagePlanUpdate: React.FC = () => {
     const fetchVillagePlan = async (villageId: number, year: number) => {
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:5000/api/village-plan?village_id=${villageId}&year=${year}`, {
+            const response = await fetch(`https://gram-paragati-setu.onrender.com/api/village-plan?village_id=${villageId}&year=${year}`, {
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('accessToken')}` }
             });
             const data = await response.json();
@@ -178,7 +178,7 @@ const VillagePlanUpdate: React.FC = () => {
         setMessage('');
         try {
             const payload = { ...formData, village_id: Number(selectedVillageId), year: selectedYear };
-            const response = await fetch('http://localhost:5000/api/village-plan', {
+            const response = await fetch('https://gram-paragati-setu.onrender.com/api/village-plan', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

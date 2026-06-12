@@ -47,7 +47,6 @@ const ProjectDetailView: React.FC = () => {
   const [showAddFunds, setShowAddFunds] = useState(false);
   const [fundAmount, setFundAmount] = useState('');
   const [fundDescription, setFundDescription] = useState('');
-  const [expandedCheckpointId, setExpandedCheckpointId] = useState<number | null>(null);
   const [selectedCheckpointId, setSelectedCheckpointId] = useState<number | null>(null); // For horizontal tracker
 
   useEffect(() => {

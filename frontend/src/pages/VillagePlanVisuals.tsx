@@ -29,7 +29,7 @@ const VillagePlanVisuals: React.FC = () => {
             if (!villageId || !year) return;
             try {
                 // Fetch Village Name
-                const vRes = await fetch('http://localhost:5000/api/villages', {
+                const vRes = await fetch('https://gram-paragati-setu.onrender.com/api/villages', {
                     headers: { 'Authorization': `Bearer ${localStorage.getItem('accessToken')}` }
                 });
                 const vData = await vRes.json();
@@ -37,7 +37,7 @@ const VillagePlanVisuals: React.FC = () => {
                 if (village) setVillageName(village.name);
 
                 // Fetch Plan
-                const pRes = await fetch(`http://localhost:5000/api/village-plan?village_id=${villageId}&year=${year}`, {
+                const pRes = await fetch(`https://gram-paragati-setu.onrender.com/api/village-plan?village_id=${villageId}&year=${year}`, {
                     headers: { 'Authorization': `Bearer ${localStorage.getItem('accessToken')}` }
                 });
                 const pData = await pRes.json();

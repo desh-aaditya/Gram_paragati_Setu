@@ -17,7 +17,7 @@ async function verify() {
 
         // 2. Try to fetch from API
         try {
-            const url = `http://localhost:5000/api/public/projects/${public_token}`;
+            const url = `https://gram-paragati-setu.onrender.com/api/public/projects/${public_token}`;
             console.log(`Testing API: ${url}`);
             const response = await axios.get(url);
             console.log('✅ API Response Status:', response.status);
