@@ -12,7 +12,7 @@ import './Home.css';
 
 const Home: React.FC = () => {
   const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
-  const { t } = useTranslation();
+  useTranslation();
 
   const banners = [
     '/banners/wide-banner.png',
